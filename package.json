@@ -1,0 +1,40 @@
+{
+  "name": "php-react-lorem-ipsum-generator",
+  "version": "0.0.0",
+  "description": "React (with webpack and babel) application to automatically generate 'lorem ipsum' text or html for dummy content.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaMarkon/phpss-react-lorem-ipsum-generator.git"
+  },
+  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "express": "~3.2.4",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "socket.io": "~0.9.14",
+    "webpack": "^2.2.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "react",
+    "html5",
+    "lorum",
+    "ipsum",
+    "javascript",
+    "reactjs"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SabrinaMarkon/phpss-react-lorem-ipsum-generator/issues"
+  },
+  "homepage": "https://github.com/SabrinaMarkon/phpss-react-lorem-ipsum-generator#readme"
+}
