@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git+https://github.com/SabrinaMarkon/phpss-react-lorem-ipsum-generator.git"
   },
-  "author": "Mostafa Eweda <mo.eweda@gmail.com>",
+  "author": "Sabrina Markon <phpsitescripts@outlook.com>",
   "dependencies": {
     "async": "~0.2.8",
     "babel-core": "^6.24.0",

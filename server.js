@@ -20,9 +20,17 @@ var router = express();
 var server = http.createServer(router);
 var io = socketio.listen(server);
 
-router.use(express.static(path.resolve(__dirname, 'client')));
+router.use(express.static(path.resolve(__dirname, '')));
 var messages = [];
 var sockets = [];
+
+router.get('/', function(req, res){
+	// res.send('<h1>Hello World</h1>');
+  // console.log('Hello World');
+  // render the index view (can have variables ie. title)
+  // variables can be array from a database or whatever and pass that to the view!
+  res.render('index', {title: 'Lorem Ipsum Generator'});
+});
 
 io.on('connection', function (socket) {
     messages.forEach(function (data) {
@@ -80,5 +88,5 @@ function broadcast(event, data) {
 
 server.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   var addr = server.address();
-  console.log("Chat server listening at", addr.address + ":" + addr.port);
+  console.log("Server listening at", addr.address + ":" + addr.port);
 });
